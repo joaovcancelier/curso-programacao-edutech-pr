@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Receita Caseiras | Lasanha a Bolonhesa</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="../css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cabecalho">
+			<h1>Receitas <br> Caseiras</h1>
+
+			<ul class="lista">
+				<li class="ativo"><a href="../index.html">Home</a></li>
+				<li><a data-toggle="modal" data-target="#modal-avaliacao" href="">Avalie-nos</a></li>
+				<li><a data-toggle="modal" data-target="#modal-ideias" href="">Nos de ideias</a></li>
+			</ul>
+		</header>
+
+		<hr>
+
+        <main class="conteudo__lasanha">
+            <h1 class="conteudo__lasanha-titulo">Lasanha a Bolonhesa</h1>
+
+            <figure class="conteudo__lasanha-imagem"><img src="../img/lasanha.png" alt=""></figure>
+
+            <h2 class="titulo__lasanha-ingredientes">Ingredientes</h2>
+
+            <section class="ingredintes__lasanha">
+                <ul class="lista__lasanha--ingredientes">
+                    <li>1 pacote de 500g de massa fresca</li>
+                    <li>500g de carne moída (patinho, maminha ou outra de sua preferência)</li>
+                    <li>5 tomates sem pele amassados ou batidos no liquidificador</li>
+                    <li>4 dentes de alho picadinhos</li>
+                    <li>1 cebola inteira1 cebola inteira</li>
+                    <li>Parmesão ralado a gosto para gratinar</li>
+                </ul>
+            </section>
+
+            <section class="modo__preparo--lasanha">
+                <h2 class="titulo-principal__modo-preparo">Modo de preparo</h2>
+
+                <div class="modo-preparo">
+                    <p class="titulo__modo-preparo">Modo de preparo-massa:</p>
+
+                    <ol class="lista__modo-preparo">
+                        <li>Cozinhe a lasanha de massa fresca, conforme orientações escritas na embalagem.</li>
+                        <li>Após o cozimento, escorra a água e reserve a massa em um refratário com água gelada para que não fique grudada.</li>
+                    </ol>
+
+                    <p class="titulo__modo-preparo">Recheio e Molho:</p>
+
+                    <ol class="lista__modo-preparo">
+                        <li>Corte em pedaços bem pequenos a cebola e o alho. Refogue os dois ingredientes até que fiquem dourados e adicione os tomates. Mexa com uma colher de madeira. Reserve.</li>
+                        <li>Refogue a carne moída, já temperada a seu gosto, em azeite ou óleo.
+                        </li>
+                        <li>Junte a carne já refogada à cebola, ao alho e ao molho de tomate e deixe ferver um pouco.
+                        </li>
+                    </ol>
+
+                    <p class="titulo__modo-preparo">Para montar a lasanha:</p>
+
+                    <ol class="lista__modo-preparo">
+                        <li>Em um refratário ou assadeira, coloque um pouco de molho.
+                        </li>
+                        <li>Coloque a primeira camada de massa para forrar o fundo e distribua a carne com o molho entre as camadas.
+                        </li>
+                        <li>Repita a operação até completar o recipiente, em todas as camadas.
+                        </li>
+                        <li>O forno deve ser pré-aquecido em 180º.
+                        </li>
+                        <li>Para finalizar, coloque o queijo ralado como última camada e leve ao forno por 30 minutos, em média.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <div class="voltarInicio"><a href="../index.html">Voltar a página principal</a></div>
+        </main>
+
+        <footer class="rodaPé">
+			<h1>Receitas <br> Caseiras</h1>
+			<p class="copyright">&copy; Copyright Receitas Caseiras - 2021</p>
+		</footer>
+
+        <!-- Modal ideias -->
+		<div class="modal fade" id="modal-ideias" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <dialog class="modal-content">
+				<header class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">Nos de ideias</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</header>
+				<main class="modal-body">
+				  <form>
+					<div class="form-group">
+					  <label for="exampleFormControlTextarea1">Escreva aqui sua ideia</label>
+					  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Insira aqui sua ideia" rows="3"></textarea>
+					</div>
+				  </form>
+				</main>
+				<footer class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				  <button type="button" class="btn botao-cor-especial">Enviar</button>
+				</footer>
+			  </dialog>
+			</div>
+		 </div>
+
+		 <!-- Modal avaliação -->
+		<div class="modal fade" id="modal-avaliacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <dialog class="modal-content">
+				<header class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">Avalie-nos</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</header>
+				<main class="modal-body">
+				  <form>
+					<div class="form-group">
+					  <label for="exampleFormControlTextarea1">O que achou do nosso site?</label>
+					  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Insira aqui o que achou" rows="3"></textarea>
+					</div>
+				  </form>
+				</main>
+				<footer class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				  <button type="button" class="btn botao-cor-especial">Enviar</button>
+				</footer>
+			  </dialog>
+			</div>
+		 </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script src=""></script>
+    </body>
+</html>

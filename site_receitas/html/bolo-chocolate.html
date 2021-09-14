@@ -1,0 +1,132 @@
+<DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Receita | Bolo de Chocolate</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<header class="cabecalho">
+			<h1>Receitas <br> Caseiras</h1>
+
+			<ul class="lista">
+				<li><a href="../index.html">Home</a></li>
+				<li><a data-toggle="modal" data-target="#modal-avaliacao" href="">Avalie-nos</a></li>
+				<li><a data-toggle="modal" data-target="#modal-ideias" href="">Nos de ideias</a></li>
+			</ul>
+		</header>
+
+		<hr>
+
+		<main class="conteudoPrincipal-boloChocolate">
+			<h1>Bolo de Chocolate</h1>
+
+			<div class="imagemBolo-centralizado"><img class="imagemBoloChocolate" src="../img/chocolate.png"></div>
+
+			<h2>Ingredientes</h2>
+
+			<section class="Ingredientes__bolo-chocolate">
+
+				<ul class="lista-boloChocolate">
+					<li><h2>Massa:</h2></li>
+					<li>4 ovos</li>
+					<li>4 colheres (sopa) de chocolate em pó</li>
+					<li>2 colheres (sopa) de manteiga</li>
+					<li>3 xícaras (chá) de farinha de trigo</li>
+					<li>2 xícaras (chá) de açúcar</li>
+					<li>2 colheres (sopa) de fermento</li>
+					<li>1 xícara (chá) de leite</li>
+				</ul>
+					
+				<ul class="lista-boloChocolate">
+					<li><h2>Calda:</h2></li>
+					<li>2 colheres (sopa) de manteiga</li>
+					<li>7 colheres (sopa) de chocolate em pó</li>
+					<li>2 latas de creme de leite com soro</li>
+					<li>3 colheres (sopa) de açúcar</li>
+				</ul>
+
+			</section>
+
+			<h2>Modo de Preparo</h2>
+
+			<div class="modoPreparo">
+				<ol class="lista-modoPreparo">
+					<li><h2>Massa:</h2></li>
+					<li>Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos.</li>
+					<li>Adicione o fermento e misture com uma espátula delicadamente.</li>
+					<li>Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma forma pequena.</li>
+					<li><h2>Calda:</h2></li>
+					<li>Em uma panela, aqueça a manteiga e misture o chocolate em pó até que esteja homogêneo.</li>
+					<li>Acrescente o creme de leite e misture bem até obter uma consistência cremosa.</li>
+					<li>Desligue o fogo e acrescente o açúcar.</li>
+				</ol>
+			</div>
+
+			<div class="voltarInicio"><a href="../index.html">Voltar a página principal</a></div>
+
+		</main>
+
+		<footer class="rodaPé">
+			<h1>Receitas <br> Caseiras</h1>
+			<p class="copyright">&copy; Copyright Receitas Caseiras - 2021</p>
+		</footer>
+
+		<!-- Modal ideias -->
+		<div class="modal fade" id="modal-ideias" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <dialog class="modal-content">
+				<header class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">Nos de ideias</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</header>
+				<main class="modal-body">
+				  <form>
+					<div class="form-group">
+					  <label for="exampleFormControlTextarea1">Escreva aqui sua ideia</label>
+					  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Insira aqui sua ideia" rows="3"></textarea>
+					</div>
+				  </form>
+				</main>
+				<footer class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				  <button type="button" class="btn botao-cor-especial">Enviar</button>
+				</footer>
+			  </dialog>
+			</div>
+		 </div>
+
+		 <!-- Modal avaliação -->
+		<div class="modal fade" id="modal-avaliacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <dialog class="modal-content">
+				<header class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">Avalie-nos</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</header>
+				<main class="modal-body">
+				  <form>
+					<div class="form-group">
+					  <label for="exampleFormControlTextarea1">O que achou do nosso site?</label>
+					  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Insira aqui o que achou" rows="3"></textarea>
+					</div>
+				  </form>
+				</main>
+				<footer class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				  <button type="button" class="btn botao-cor-especial">Enviar</button>
+				</footer>
+			  </dialog>
+			</div>
+		 </div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script src=""></script>
+	</body>
+</html>
